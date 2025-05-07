@@ -18,12 +18,12 @@ java {
 }
 
 application {
-    mainClass.set("org.example.currencyconverter.MainApp")  // Updated main class
+    mainClass.set("org.example.currencyconverterfinalprojectsdev200carsonbeckmann.MainApp")
 }
 
 javafx {
     version = "17"
-    modules = listOf("javafx.controls")  // Only 'controls' needed (no FXML)
+    modules = listOf("javafx.controls")
 }
 
 tasks.test {

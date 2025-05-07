@@ -30,7 +30,6 @@ public class MainApp extends Application {
         VBox root = new VBox(10);
         root.setPadding(new Insets(15));
 
-        // Setup currency boxes
         sourceCurrencyBox.getItems().addAll(currencies);
         targetCurrencyBox.getItems().addAll(currencies);
         setupCurrencyBox(sourceCurrencyBox);
@@ -38,11 +37,9 @@ public class MainApp extends Application {
         sourceCurrencyBox.getSelectionModel().selectFirst();
         targetCurrencyBox.getSelectionModel().selectFirst();
 
-        // UI Elements
         amountTextField.setPromptText("Enter amount");
         convertButton.setOnAction(e -> convertCurrency());
 
-        // Layout
         root.getChildren().addAll(
                 new Label("Amount:"), amountTextField,
                 new Label("Source Currency:"), sourceCurrencyBox,
